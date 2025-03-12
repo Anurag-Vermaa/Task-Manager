@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-md mx-auto mt-12 p-6 rounded-lg shadow-md bg-white">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-700">Task Master</h2>
+            <button id="clear-completed" class="text-sm text-red-500 hover:underline">Clear Completed</button>
+        </div>
+        
+        <ul class="todo-list" id="todo-list"></ul>
+        
+        <div class="add-todo mt-6 flex justify-between items-center">
+            <input type="text" id="todo-input" placeholder="Add new task" class="w-full py-2 pl-4 text-sm text-gray-800 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600 bg-gray-50">
+            <button type="button" id="add-todo-btn" class="ml-4 px-4 py-2 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-700 transition">Add</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
